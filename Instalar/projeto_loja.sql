@@ -1,30 +1,34 @@
-create table produtos(
-        id integer auto_increment primary key,
-        nome varchar(255), preco decimal(10,2),
-        categoria_id int(11),
-        usado tinyint(1),
-        descricao varchar(300)
-);
+﻿CREATE TABLE produtos 
+  ( 
+     id           INTEGER auto_increment PRIMARY KEY, 
+     nome         VARCHAR(255), 
+     preco        DECIMAL(10, 2), 
+     categoria_id INT(11), 
+     usado        TINYINT(1), 
+     descricao    VARCHAR(300) 
+  ); 
 
-create table categorias(
-        id integer auto_increment primary key,
-        nome varchar(255)
-);
+CREATE TABLE categorias 
+  ( 
+     id   INTEGER auto_increment PRIMARY KEY, 
+     nome VARCHAR(255) 
+  ); 
 
-create table usuario(
-        id integer auto_increment primary key,
-        email varchar(255),
-        senha varchar(255)
-);
+CREATE TABLE usuario 
+  ( 
+     id    INTEGER auto_increment PRIMARY KEY, 
+     email VARCHAR(255), 
+     senha VARCHAR(255) 
+  ); 
 
-insert into categorias (nome) values
-        ('Acessórios para Veículos'),
-        ('Agro, Indústria e Comércio'),
-        ('Animais'),
-        ('Antiguidades'),
-        ('Arte e Artesanato'),
-        ('Bebês'),
-        ('Brinquedos e Hobbies'),
-        ('Calçados'),
-        ('Roupas e Bolsas')
-;
+INSERT INTO categorias 
+            (nome) 
+VALUES      ('Acessórios para Veículos'), 
+            ('Agro, Indústria e Comércio'), 
+            ('Animais'), 
+            ('Antiguidades'), 
+            ('Arte e Artesanato'), 
+            ('Bebês'), 
+            ('Brinquedos e Hobbies'), 
+            ('Calçados'), 
+            ('Roupas e Bolsas'); 
